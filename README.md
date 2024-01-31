@@ -2,7 +2,7 @@
 # Getting started
 - Clone the repository
 ```
-git clone 
+git clone https://github.com/luisalavez/users_news_app.git
 ```
 
 
@@ -14,4 +14,10 @@ npm install
 - Run the project
 ```
 npm run dev
+```
+
+- Open browser and go to
+
+```
+http://localhost:5173/
 ```

@@ -10,26 +10,26 @@ export default function Navbar() {
   const setLanguage = useLanguageStore((state) => state.setLanguage);
   const translations = useLanguageStore((state) => state.translations);
 
-  const handleLanguage = (lang:LanguageT) => {
+  const handleLanguage = (lang: LanguageT) => {
     setLanguage(lang);
     toggleDropdown();
   };
 
-  const toggleDropdown = () =>{
+  const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
-  }
+  };
   return (
     <header className="shadow-sm py-2">
       <nav className="m-auto flex max-w-5xl items-center justify-between">
         <div>
           <Link className="link" to={ROUTES.HOME}>
-          {translations[language][LANGLINKS.HOME]}
+            {translations[language][LANGLINKS.HOME]}
           </Link>
           <Link className="link" to={ROUTES.USERS}>
-          {translations[language][LANGLINKS.USERS]}
+            {translations[language][LANGLINKS.USERS]}
           </Link>
           <Link className="link" to={ROUTES.NEWS}>
-          {translations[language][LANGLINKS.NEWS]}
+            {translations[language][LANGLINKS.NEWS]}
           </Link>
         </div>
         <div className="relative">
