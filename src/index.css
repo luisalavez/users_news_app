@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    .input-text {
+        @apply block w-full border border-gray-200
+        text-sm font-medium text-gray-900 p-1
+        rounded-md  bg-white shadow-sm
+        focus:outline-none
+    }
+
+    .label {
+        @apply font-medium text-gray-900 mb-1
+    }
+
+    .button{
+        @apply block font-bold min-w-[100px] max-h-[40px] bg-sky-600 rounded-md 
+        border border-sky-600 shadow-md
+        text-white m-2 p-1
+    }
+
+    .link {
+        @apply text-gray-600 font-medium border rounded-md m-2 p-2 hover:bg-sky-400 transition-all
+    }
+}
