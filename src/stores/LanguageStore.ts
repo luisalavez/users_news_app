@@ -26,6 +26,7 @@ const useLanguageStore = create<LanguageStore>((set) => ({
       [LANGACTIONS.VIEW_USER]: "View User",
       [LANGACTIONS.VIEW_NEWS]: "View News",
       [LANGACTIONS.SAVE]: "Save",
+      [LANGACTIONS.CREATE]: "Create",
     },
     Español: {
       [LANGLINKS.HOME]: "Inicio",
@@ -34,6 +35,7 @@ const useLanguageStore = create<LanguageStore>((set) => ({
       [LANGACTIONS.VIEW_USER]: "Ver Usuario",
       [LANGACTIONS.VIEW_NEWS]: "Ver Noticia",
       [LANGACTIONS.SAVE]: "Guardar",
+      [LANGACTIONS.CREATE]: "Crear",
     },
   },
 }));

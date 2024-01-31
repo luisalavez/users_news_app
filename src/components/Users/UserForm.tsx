@@ -30,14 +30,14 @@ export default function UserForm({
     formState: { errors, isSubmitting },
   } = useForm<UserT>({
     resolver: zodResolver(userSchema),
-    defaultValues:{
-      "id": id,
-      "firstName": firstName.trim(),
-      "lastName": lastName.trim(),
-      "email": email,
-      "phoneNumber": phoneNumber,
-      "address": address.trim()
-    }
+    defaultValues: {
+      id: id,
+      firstName: firstName.trim(),
+      lastName: lastName.trim(),
+      email: email,
+      phoneNumber: phoneNumber,
+      address: address.trim(),
+    },
   });
 
   const onSubmit = async (data: UserT) => {
@@ -106,7 +106,7 @@ export default function UserForm({
         <p className="text-red-500">{`${errors.address?.message}`}</p>
       )}
       <button type="submit" disabled={isSubmitting} className="button">
-      {translations[language][LANGACTIONS.SAVE]}
+        {translations[language][LANGACTIONS.SAVE]}
       </button>
     </form>
   );

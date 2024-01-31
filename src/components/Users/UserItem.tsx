@@ -31,7 +31,9 @@ export default function UserItem({ id, firstName, lastName }: UserItemProps) {
             {lastName}
           </span>
         </p>
-        <Link className="button" to={`/users/${id}`}>{translations[language][LANGACTIONS.VIEW_USER]}</Link>
+        <Link className="button" to={`/users/${id}`}>
+          {translations[language][LANGACTIONS.VIEW_USER]}
+        </Link>
       </div>
     </section>
   );

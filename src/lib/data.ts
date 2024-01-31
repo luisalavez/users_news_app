@@ -84,6 +84,7 @@ export const LANGACTIONS = {
     VIEW_USER:'View User',
     VIEW_NEWS:'View news',
     SAVE:'SAVE',
+    CREATE:'CREATE',
 }
 export const ROUTES = {
     HOME:"/",
