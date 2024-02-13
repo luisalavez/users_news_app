@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import useLanguageStore from "../stores/LanguageStore";
 import { useState } from "react";
 import { LanguageT } from "../lib/types";
@@ -22,15 +22,30 @@ export default function Navbar() {
     <header className="shadow-sm py-2">
       <nav className="m-auto flex max-w-5xl items-center justify-between">
         <div>
-          <Link className="link" to={ROUTES.HOME}>
+          <NavLink
+            className={({ isActive }) =>
+              [isActive ? "bg-sky-300" : "", "link"].join(" ")
+            }
+            to={ROUTES.HOME}
+          >
             {translations[language][LANGLINKS.HOME]}
-          </Link>
-          <Link className="link" to={ROUTES.USERS}>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              [isActive ? "bg-sky-300" : "", "link"].join(" ")
+            }
+            to={ROUTES.USERS}
+          >
             {translations[language][LANGLINKS.USERS]}
-          </Link>
-          <Link className="link" to={ROUTES.NEWS}>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              [isActive ? "bg-sky-300" : "", "link"].join(" ")
+            }
+            to={ROUTES.NEWS}
+          >
             {translations[language][LANGLINKS.NEWS]}
-          </Link>
+          </NavLink>
         </div>
         <div className="relative">
           <button className="link" onClick={() => toggleDropdown()}>

@@ -93,5 +93,5 @@ export const ROUTES = {
     VIEW_USER:"/users/:id",
     NEWS:"/news",
     VIEW_NEWS:"/news/:id",
-}
+} as const;
 
